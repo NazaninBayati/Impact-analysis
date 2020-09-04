@@ -237,8 +237,8 @@ class fileMetrics(FileLevel.MainMetrics.Metrics):
         final_list.append(file_list)
         FileLevel.MainMetrics.Metrics.printresult(self,'File_level_ARM.txt',final_list,iterator,header)
     def __init__(self):
-        #args = sys.argv[1]
-        args = '/home/nazanin/cephDB.udb'
+        args = sys.argv[1]
+
         file_dependency = {}
         file_dependentby = {}
         File_Metrics = {}
