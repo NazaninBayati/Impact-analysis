@@ -1,20 +1,23 @@
-class Main():
+class Main:
+    def Structural_data_load(self,args):
+        self.args = args
 
-    def load_db_functionlevel(self,db_path):
-        db = open(db_path,'r').read()
-        return db
+        structural_dependency = open(str(args))
+        structural_dependency = structural_dependency.read()
+        return structural_dependency
 
-    def write(self,file, title):
-        self.file = file
-        key = file.keys()
+    def Logical_data_load(self,args):
+        self.args = args
+        logical_dependency = open(str(args))
+        logical_dependency = logical_dependency.read()
+        return logical_dependency
 
-        with open(str(title),'w')as handler:
-            for i in key:
-
-                a = file[i]
-                for j in a:
-                    handler.write(str(j[0]).split("\'")[1]+',')
-
-                handler.write("\n")
-
-p = Main()
+    def write(self,file_structural,title):
+        self.file_structural = file_structural
+        self.title = title
+        with open(str(title), 'w')as handler:
+            for i in (file_structural):
+                handler.write(i)
+                handler.write(":")
+                handler.write(str(file_structural[str(i)]))
+                handler.write('\n')
