@@ -236,6 +236,7 @@ class fileMetrics(FileLevel.MainMetrics.Metrics):
         print("File level done!")
         final_list.append(file_list)
         FileLevel.MainMetrics.Metrics.printresult(self,'File_level_ARM.txt',final_list,iterator,header)
+
     def __init__(self):
         args = sys.argv[1]
 
