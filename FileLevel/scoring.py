@@ -128,8 +128,8 @@ class score(FileLevel.Main.Main):
 
         #json.dump(support_dict, open("func_logical.json", "w"))
        # json.dump(file_structural, open("func_structural.json", "w"))
-        FileLevel.Main.Main.write(self,file_structural,'MergedList_file_structural.txt')
-        FileLevel.Main.Main.write(self,merged_result_dictionary,'MergedList_merged_result.txt')
+        FileLevel.Main.Main.write(self,file_structural,'FinalList_file_structural.txt')
+        FileLevel.Main.Main.write(self,merged_result_dictionary,'FinalList_merged_result.txt')
         #json.dump(file_structural, open("func_structural.json", "w"))
 
     def __init__(self):
