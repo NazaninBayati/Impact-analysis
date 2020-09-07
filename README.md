@@ -1,18 +1,18 @@
-
+# Impact Analysis
 
 In this project we have two basic goals:
    -	Analyzing the source code to extract all dependencies
    
    -	Apply it on different granularities i.e. file-level, class-level, function-level
 ---------------------------------------------------------------------------------------------------------------------------------------------------- 
-Analyzing the source code
+# Analyzing the source code
 
 We are looking for a complete group of dependencies. Therefore, we first extract the structural dependencies then we check the logical dependencies.
 
    -	In structural dependency: 
    -	In logical dependency:
  ----------------------------------------------------------------------------------------------------------------------------------------------------  
-Supporting different granularities: 
+# Supporting different granularities: 
 
 The project could be applied for various code granularities including:
 
@@ -24,9 +24,10 @@ Mostly projects which are written in C/C++ are our target.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-Source Code Descriptions
+# Source Code Descriptions
 
 To run the File level code you only need to execute the setup.py
+
 ------------------------------------------------------------------------------------------------------------------------------------------------
 The following lines will create the und database, which is required for our structural analysis:
 
@@ -48,11 +49,12 @@ Now, you have the structural dependencies and you can start the logical analysis
 The following command lines are co-related and they are input/output of eachother.
 
 os.system('python pydrill_filelevel.py /path/to/project')
-# give the path to the project you made und db for to the above command.
+* give the path to the project you made und db for to the above command.
 os.system('python arm.py')
 os.system('python scoring.py')
 
 hint: the FinalList_merged_result.txt is the final output
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 
